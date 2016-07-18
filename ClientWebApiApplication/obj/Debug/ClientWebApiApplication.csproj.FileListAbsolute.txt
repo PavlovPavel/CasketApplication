@@ -1,0 +1,10 @@
+C:\Solutions\CasketApplication\ClientWebApiApplication\bin\Debug\ClientWebApiApplication.exe.config
+C:\Solutions\CasketApplication\ClientWebApiApplication\bin\Debug\ClientWebApiApplication.exe
+C:\Solutions\CasketApplication\ClientWebApiApplication\bin\Debug\ClientWebApiApplication.pdb
+C:\Solutions\CasketApplication\ClientWebApiApplication\bin\Debug\Newtonsoft.Json.dll
+C:\Solutions\CasketApplication\ClientWebApiApplication\bin\Debug\System.Net.Http.Formatting.dll
+C:\Solutions\CasketApplication\ClientWebApiApplication\bin\Debug\Newtonsoft.Json.xml
+C:\Solutions\CasketApplication\ClientWebApiApplication\bin\Debug\System.Net.Http.Formatting.xml
+C:\Solutions\CasketApplication\ClientWebApiApplication\bin\Debug\ru\System.Net.Http.Formatting.resources.dll
+C:\Solutions\CasketApplication\ClientWebApiApplication\obj\Debug\ClientWebApiApplication.exe
+C:\Solutions\CasketApplication\ClientWebApiApplication\obj\Debug\ClientWebApiApplication.pdb

@@ -1,0 +1,44 @@
+﻿@model CasketApplication.Models.SiteStatusModels
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "SiteStatus";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true);
+
+    <fieldset>
+        <legend>Статус сервера</legend>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Work)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Work)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PlanWorkTime)
+        </div>
+        @if (Model.PlanWorkTime != null)
+        {
+            for (int i = 0; i < Model.PlanWorkTime.Count; i++)
+            {
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.PlanWorkTime[i].BeginTime)
+                    @Html.EditorFor(model => model.PlanWorkTime[i].EndTime)
+                    <a href="@Url.Action("EditDateTimeInterval", new { guidSiteDateTimeIntervalModels = Model.PlanWorkTime[i].Identifier })">Редактировать</a>
+                    <a href="@Url.Action("DeleteDateTimeInterval", new { guidSiteDateTimeIntervalModels = Model.PlanWorkTime[i].Identifier })">Удалить</a>
+                </div>
+            }
+        }
+
+        <p>
+            <a href="@Url.Action("AddDateTimeInterval")">Добавить</a>
+            <input type="submit" value="Сохранить" />
+        </p>
+    </fieldset>
+}
+
+
